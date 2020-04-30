@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- p.71 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Constructor-based dependency injection -->
+	<bean id="tv"
+		class="kr.ac.mjc.sungbin.spring.day1.class04.constructorbased.SamsungTV">
+		<constructor-arg ref="speaker" />
+	</bean>
+
+	<bean id="speaker" class="kr.ac.mjc.sungbin.spring.day1.class04.SonySpeaker" />
+
+</beans>

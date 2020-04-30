@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<bean id="dataSource" class="org.mariadb.jdbc.MariaDbDataSource">
+		<constructor-arg
+			value="jdbc:mariadb://irafe.com:3306/jdbc?user=jdbc&amp;password=javaprogramming" />
+	</bean>
+
+	<bean id="dbUtils"
+		class="kr.ac.mjc.sungbin.spring.day1.user.common.DbUtils">
+		<constructor-arg ref="dataSource" />
+	</bean>
+
+	<bean id="userDao"
+		class="kr.ac.mjc.sungbin.spring.day1.user.xmlconfiguration.UserDao">
+		<constructor-arg ref="dbUtils" />
+	</bean>
+</beans>
