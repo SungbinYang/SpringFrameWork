@@ -1,2 +1,4 @@
 # SpringFrameWork
-명지전문대학교 과제
+- IOC Container
+- Application Context
+- Dependency Injection
