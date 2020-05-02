@@ -2,6 +2,6 @@
 - IOC Container
 - Application Context
 - Dependency Injection
-# 스프링 퀵 스타트!
+# Lecture's Book : Spring Quick Start
 # Day1
  - User table project
