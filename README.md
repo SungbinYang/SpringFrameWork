@@ -7,3 +7,4 @@
  - User table project
 # Day2
  - JdbcTemplete & NamedParameterJdbcTemplete using by Board Project
+ - JdbcTemplete & NamedParameterJdbcTemplete using by User Project
